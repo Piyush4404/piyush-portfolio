@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 200px;
+            /* Adjust as needed */
+            height: 200px;
+            /* Adjust as needed */
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            animation-name: imageAnimation;
+            animation-duration: 3s;
+            /* Adjust as needed */
+            animation-timing-function: ease-in-out;
+            /* Adjust as needed */
+            animation-iteration-count: infinite;
+            /* Adjust as needed */
+        }
+
+        @keyframes imageAnimation {
+            0% {
+                transform: translateX(0);
+            }
+
+            /* Initial position */
+            50% {
+                transform: translateX(200%);
+            }
+
+            /* Animation movement */
+            100% {
+                transform: translateX();
+            }
+
+            /* Return to initial position */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="./food.jpg" alt="Image">
+    </div>
+</body>
+
+</html>
